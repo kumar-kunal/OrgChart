@@ -1,0 +1,29 @@
+<html>
+   <head>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <form class="form-inline">
+         <div class="form-group">
+            <label for="files">Upload Enterprise Data:</label>
+            <input type="file" id="files"  class="form-control" accept=".csv" required />
+         </div>
+         <div class="form-group">
+            <button type="submit" id="submit-file" class="btn btn-primary">Upload File </button>
+         </div>
+      </form>
+      <div id="chart_div" style="background-color:lightblue; display: block;
+      padding-top: 100px;
+      padding-right: 100px;
+      padding-bottom: 100px;
+      padding-left: 100px;"></div>
+      <br>
+      <input type="button" value="Export as PDF" onclick="print()">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+      <script src="./html2canvas.js"></script>
+      <script src="./app.js"></script>
+   </body>
+</html>
+
